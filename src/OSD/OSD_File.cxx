@@ -1,3 +1,7 @@
+#ifdef __wasi__
+#include "wasi_fcntl_ext.h"
+static inline int mkstemp(char* tpl) { (void)tpl; return -1; }
+#endif
 // Copyright (c) 1998-1999 Matra Datavision
 // Copyright (c) 1999-2014 OPEN CASCADE SAS
 //

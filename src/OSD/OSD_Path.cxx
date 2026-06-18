@@ -1,3 +1,6 @@
+#ifdef __wasi__
+#include "sys/utsname.h"
+#endif
 // Copyright (c) 1998-1999 Matra Datavision
 // Copyright (c) 1999-2014 OPEN CASCADE SAS
 //

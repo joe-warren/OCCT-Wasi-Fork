@@ -1,3 +1,7 @@
+#ifdef __wasi__
+#include <sys/types.h>
+static inline uid_t getuid(void) { return 0; }
+#endif
 // Copyright (c) 1998-1999 Matra Datavision
 // Copyright (c) 1999-2014 OPEN CASCADE SAS
 //

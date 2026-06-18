@@ -1,3 +1,6 @@
+#ifdef __wasi__
+#include "wasi_signal_ext.h"
+#endif
 // Copyright (c) 1999-2014 OPEN CASCADE SAS
 //
 // This file is part of Open CASCADE Technology software library.

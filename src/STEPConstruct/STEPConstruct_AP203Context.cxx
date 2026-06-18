@@ -1,3 +1,6 @@
+#ifdef __wasi__
+static long timezone = 0;
+#endif
 // Created on: 1999-11-19
 // Created by: Andrey BETENEV
 // Copyright (c) 1999-1999 Matra Datavision

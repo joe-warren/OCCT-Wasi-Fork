@@ -1,3 +1,8 @@
+#ifdef __wasi__
+#include <sys/types.h>
+static inline mode_t umask(mode_t mask) { (void)mask; return 0; }
+static inline char* mkdtemp(char* tpl) { (void)tpl; return 0; }
+#endif
 // Copyright (c) 1998-1999 Matra Datavision
 // Copyright (c) 1999-2014 OPEN CASCADE SAS
 //
