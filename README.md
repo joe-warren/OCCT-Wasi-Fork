@@ -1,3 +1,11 @@
+# OCCT WASI FORK
+
+This is a fork of OCCT version 7.9.3, with some _very_ quick and dirty modifications made in order to support a WASM/WASI build.
+
+My usecase for this is Building a wasm playground for the [Waterfall-CAD](https://github.com/joe-warren/opencascade-hs/) Haskell library.
+
+The original README is preserved below.
+
 # Open CASCADE Technology
 
 Open CASCADE Technology (OCCT) is a software development platform providing services for 3D surface and solid modeling, CAD data exchange, and visualization. Most of OCCT functionality is available in the form of C++ libraries. OCCT is ideal for developing software dealing with 3D modeling (CAD), manufacturing/measuring (CAM), or numerical simulation (CAE).
